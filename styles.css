@@ -8,7 +8,15 @@ body {
     flex-direction: row;
 }
 
+#indicator-container {
+    padding: 30px;
+    width: 320px;
+    background: #efefef;
+    margin-right: 30px;
+}
+
 #indicator {
+    background: #efefef;
     position: relative;
     height: 490px;
     width: 320px;
@@ -16,16 +24,18 @@ body {
 }
 
 #indicator .segment {
-    background: black;
+    color: black;
+    background: white;
+    border: 1px solid black;
     cursor: pointer;
     position: absolute;
-    color: white;
     text-align: center;
     border-radius: 9px;
 }
 
 #indicator .segment.active {
     background: green;
+    color: white;
 }
 
 /* horizontal */
