@@ -30,8 +30,8 @@ document.querySelectorAll('#indicator .segment').forEach(element => {
         commonAnodeSegments = setBit(commonAnodeSegments, segmentMaskPosition, isSegmentActive ? 0 : 1);
 
         // fill hex value
-        document.getElementById('common-cathode-hex-code').textContent = '0x' + commonCathodeSegments.toString(16).padStart(2, "0").toUpperCase();
-        document.getElementById('common-anode-hex-code').textContent = '0x' + commonAnodeSegments.toString(16).padStart(2, "0").toUpperCase();
+        document.getElementById('common-cathode-hex-code').textContent = '0x' + commonCathodeSegments.toString(16).padStart(2, "0").toUpperCase() + " (" + commonCathodeSegments + ")";
+        document.getElementById('common-anode-hex-code').textContent = '0x' + commonAnodeSegments.toString(16).padStart(2, "0").toUpperCase() + " (" + commonAnodeSegments + ")";
     })
 })
 
