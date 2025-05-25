@@ -1,0 +1,121 @@
+body {
+    width: 800px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#indicator {
+    position: relative;
+    height: 490px;
+    width: 320px;
+    margin-right: 50px;
+}
+
+#indicator .segment {
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    text-align: center;
+    border-radius: 9px;
+}
+
+#indicator .segment.active {
+    background: green;
+}
+
+/* horizontal */
+#segment-a,
+#segment-d,
+#segment-g {
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+}
+
+#segment-a {
+    top: 0px;
+    left: 30px;
+}
+
+#segment-d {
+    top: 460px;
+    left: 30px;
+}
+
+#segment-g {
+    top: 230px;
+    left: 30px;
+}
+
+/* vertical */
+#segment-b,
+#segment-c,
+#segment-e,
+#segment-f {
+    height: 200px;
+    width: 30px;
+    line-height: 200px;
+}
+
+#segment-b {
+    top: 30px;
+    left: 230px;
+}
+
+#segment-c {
+    top: 260px;
+    left: 230px;
+}
+
+#segment-e {
+    top: 260px;
+    left: 0px;
+}
+
+#segment-f {
+    top: 30px;
+    left: 0px;
+}
+
+/* point */
+#segment-dp {
+    top: 460px;
+    left: 290px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+
+#codes table {
+    border-collapse: collapse;
+}
+
+#codes table td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#codes .hex-code {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    height: 60px;
+    line-height: 60px;
+}
+
+#codes .hex-code .label {
+    margin-right: 10px;
+}
+
+#codes .hex-code .code {
+    height: 100%;
+    padding: 0 30px;
+    border-radius: 5px;
+    background: #efefef;
+    text-align: center;
+}

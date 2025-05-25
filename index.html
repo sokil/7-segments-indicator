@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="indicator">
+                <div class="segment" id="segment-a" data-segment="a">A</div>
+                <div class="segment" id="segment-b" data-segment="b">B</div>
+                <div class="segment" id="segment-c" data-segment="c">C</div>
+                <div class="segment" id="segment-d" data-segment="d">D</div>
+                <div class="segment" id="segment-e" data-segment="e">E</div>
+                <div class="segment" id="segment-f" data-segment="f">F</div>
+                <div class="segment" id="segment-g" data-segment="g">G</div>
+                <div class="segment" id="segment-dp" data-segment="dp">DP</div>
+            </div>
+            <div id="codes">
+                <h1> Common cathode (1 - on)</h1>
+                <table>
+                    <tr>
+                        <td>Segment</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                        <td>G</td>
+                        <td>DP</td>
+                    </tr>
+                    <tr>
+                        <td>Bit</td>
+                        <td id="common-cathode-pin-a">0</td>
+                        <td id="common-cathode-pin-b">0</td>
+                        <td id="common-cathode-pin-c">0</td>
+                        <td id="common-cathode-pin-d">0</td>
+                        <td id="common-cathode-pin-e">0</td>
+                        <td id="common-cathode-pin-f">0</td>
+                        <td id="common-cathode-pin-g">0</td>
+                        <td id="common-cathode-pin-dp">0</td>
+                    </tr>
+                </table>
+                <div class="hex-code">
+                    <div class="label">HEX Code</div>
+                    <div class="code" id="common-cathode-hex-code">0x00</div>
+                </div>
+                <h1> Common anode (0 - on)</h1>
+                <table>
+                    <tr>
+                        <td>Segment</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                        <td>G</td>
+                        <td>DP</td>
+                    </tr>
+                    <tr>
+                        <td>Bit</td>
+                        <td id="common-anode-pin-a">1</td>
+                        <td id="common-anode-pin-b">1</td>
+                        <td id="common-anode-pin-c">1</td>
+                        <td id="common-anode-pin-d">1</td>
+                        <td id="common-anode-pin-e">1</td>
+                        <td id="common-anode-pin-f">1</td>
+                        <td id="common-anode-pin-g">1</td>
+                        <td id="common-anode-pin-dp">1</td>
+                    </tr>
+                </table>
+                <div class="hex-code">
+                    <div class="label">HEX Code</div>
+                    <div class="code" id="common-anode-hex-code">0xFF</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="app.js"></script>
+</html>
